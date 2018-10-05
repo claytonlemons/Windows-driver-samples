@@ -10,10 +10,10 @@ This test consists of a test application (testapp.exe) and driver (memperftest.s
 
 testapp.exe calls into memperftest.sys to allocate memory and check the execution time.
 It takes in the following arguments:
-    NUM_TESTS - Number of times to run the performance test. Execution times are averaged at the end. 
-    NON_PAGED_MEMORY_SIZE_IN_BYTES (Optional, defaults to 14400000) - Size of the non-paged memory chunk to allocate. This is allocated before the contiguous chunks.
-    CONTIGUOUS_MEMORY_SIZE_IN_BYTES (Optional, defaults to 1023) - Size of the contiguous memory chunks to allocate.
-    NUM_CONTIGUOUS_MEMORY_CHUNKS (Optional, defaults to 3500) - Number of contiguous memory chunks to allocate.
+- NUM_TESTS - Number of times to run the performance test. Execution times are averaged at the end. 
+- NON_PAGED_MEMORY_SIZE_IN_BYTES (Optional, defaults to 14400000) - Size of the non-paged memory chunk to allocate. This is allocated before the contiguous chunks.
+- CONTIGUOUS_MEMORY_SIZE_IN_BYTES (Optional, defaults to 1023) - Size of the contiguous memory chunks to allocate.
+- NUM_CONTIGUOUS_MEMORY_CHUNKS (Optional, defaults to 3500) - Number of contiguous memory chunks to allocate.
 
 The defaults and order of allocation were chosen to represent a real application.
 
